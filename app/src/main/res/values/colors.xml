@@ -4,5 +4,16 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="mainbackground">#A4C1D0</color>
-    <color name="white">#ffffff</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="merah">#FF0000</color>
+    <color name="hijau">#00FF00</color>
+    <color name="abu_abu">#909090</color>
+    <color name="kuning">#FFFF00</color>
+    <color name="jingga">#FFAA00</color>
+    <color name="biru">#00F0F0</color>
+    <color name="ungu">#7F00FF</color>
+    <color name="hitam">#000000</color>
+    <color name="pink">#FF00FF</color>
+    <color name="white">#FFFFFF</color>
 </resources>
