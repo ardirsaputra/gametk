@@ -22,11 +22,11 @@ public class main extends AppCompatActivity {
         //boolean isExam = sp.getBoolean("isExam",false);
         Map data = sp.getAll();
         //boolean isExam = data.containsKey("isExam");
-        //String exam ;
+        String exam ;
         //if(isExam){
         //    exam = "Sedang Ujian";
         //}else{
-        //    exam = "Tidak Sedang Ujian";
+          exam = "";
        // }
         final Button warna = (Button) findViewById(R.id.warna);
         warna.setOnClickListener(  new View.OnClickListener() {
@@ -35,7 +35,16 @@ public class main extends AppCompatActivity {
                 SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
                 mainIntent = new Intent(main.this,Warna.class);
                 SharedPreferences.Editor editor = sp.edit();
-                editor.putString("onstate", "warna");
+                editor.putString("onState", "warna");
+                editor.putString("Judul","Warna");
+                editor.putString("Jumlah Soal","0");
+                editor.putString("TombolUjian1","1");
+                editor.putString("TombolUjian2","2");
+                editor.putString("TombolUjian3","3");
+                editor.putString("TombolUjian4","4");
+                editor.putString("TombolUjian5","5");
+                editor.putString("TombolUjian6","10");
+                editor.commit();
                 startActivity(mainIntent);
             }
         });
