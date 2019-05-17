@@ -29,7 +29,7 @@ public class WarnaTest extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_warna_test);
+        setContentView(R.layout.activity_play);
         SharedPreferences sp = getSharedPreferences("Storage", 0);
 
         int scoreString = sp.getInt("score",0);

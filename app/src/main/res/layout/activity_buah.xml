@@ -4,51 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Hewan"
     android:background="@color/mainbackground"
-    >
+    tools:context=".Buah">
 
     <Button
-        android:id="@+id/tombollebah"
-        android:layout_width="129dp"
+        android:id="@+id/tombolstroberry"
+        android:layout_width="106dp"
         android:layout_height="94dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/lebah"
+        android:background="@drawable/stroberry"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.887" />
 
     <Button
-        android:id="@+id/tombolsapi"
+        android:id="@+id/tomboldurian"
         android:layout_width="138dp"
         android:layout_height="109dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/sapi"
+        android:background="@drawable/durian"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
+        app:layout_constraintVertical_bias="0.686" />
 
     <Button
-        android:id="@+id/tombolikan"
+        android:id="@+id/tombolmangga"
         android:layout_width="140dp"
         android:layout_height="109dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/ikan"
+        android:background="@drawable/mangga"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.925"
@@ -57,30 +56,30 @@
         app:layout_constraintVertical_bias="0.214" />
 
     <Button
-        android:id="@+id/tombolrusa"
-        android:layout_width="130dp"
+        android:id="@+id/tombolmanggis"
+        android:layout_width="113dp"
         android:layout_height="98dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/rusa"
+        android:background="@drawable/manggis"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <Button
-        android:id="@+id/tombolbadak"
+        android:id="@+id/tombolpisang"
         android:layout_width="138dp"
         android:layout_height="101dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/badak"
+        android:background="@drawable/pisang"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.917"
@@ -89,59 +88,59 @@
         app:layout_constraintVertical_bias="0.441" />
 
     <Button
-        android:id="@+id/tombolmacan"
-        android:layout_width="136dp"
+        android:id="@+id/tomboljeruk"
+        android:layout_width="107dp"
         android:layout_height="97dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/macan"
+        android:background="@drawable/jeruk"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
+        app:layout_constraintVertical_bias="0.229" />
 
     <Button
-        android:id="@+id/tombolkucing"
+        android:id="@+id/tombolanggur"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="141dp"
-        android:layout_height="94dp"
+        android:layout_width="137dp"
+        android:layout_height="98dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/kucing"
+        android:background="@drawable/anggur"
         android:elevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
+        app:layout_constraintVertical_bias="0.673" />
 
     <Button
-        android:id="@+id/tombolayam"
+        android:id="@+id/tombolsirsak"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="144dp"
+        android:layout_width="134dp"
         android:layout_height="93dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/ayam"
+        android:background="@drawable/sirsak"
         android:elevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintVertical_bias="0.887" />
 
     <Button
-        android:id="@+id/tomboltesthewan"
+        android:id="@+id/tomboltestbuah"
         android:layout_width="59dp"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
@@ -167,5 +166,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/headerbinatang" />
+        app:srcCompat="@drawable/headerbuahbuahan" />
 </android.support.constraint.ConstraintLayout>

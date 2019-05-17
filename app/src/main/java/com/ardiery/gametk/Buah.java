@@ -3,8 +3,6 @@ package com.ardiery.gametk;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,17 +11,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.Random;
 
-public class Hewan extends AppCompatActivity {
+public class Buah extends AppCompatActivity {
     public static final String PREFS_NAME = "Storage";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hewan);
+        setContentView(R.layout.activity_buah);
         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
         SharedPreferences.Editor editor = sp.edit();
         editor.putInt("score", 0);
         editor.putBoolean("isEzam", false);
-        editor.putString("onState", "list hewan");
+        editor.putString("onState", "list buah");
         editor.putString("Judul","Hewan");
         editor.commit();
         final String judul = sp.getString("Judul","Warna");
@@ -33,18 +31,18 @@ public class Hewan extends AppCompatActivity {
         final String texttombolujian4 = sp.getString("TombolUjian4","4");
         final String texttombolujian5 = sp.getString("TombolUjian5","5");
         final String texttombolujian6 = sp.getString("TombolUjian6","10");
-        Button sapi  = (Button) findViewById(R.id.tombolsapi);
-        sapi.setOnClickListener(new View.OnClickListener() {
+        Button mangga  = (Button) findViewById(R.id.tombolmangga);
+        mangga.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
-                final Dialog dialog = new Dialog(Hewan.this);
+                final Dialog dialog = new Dialog(Buah.this);
                 dialog.setContentView(R.layout.layout_custom);
-                dialog.setTitle("Sapi");
+                dialog.setTitle("Mangga");
                 TextView text = (TextView) dialog.findViewById(R.id.tv_desc);
-                text.setText("Sapi");
+                text.setText("Mangga");
                 ImageView image = (ImageView) dialog.findViewById(R.id.tv_icon);
                 image.setMinimumWidth(100);
                 image.setMinimumHeight(120);
-                image.setImageResource(R.drawable.sapi);
+                image.setImageResource(R.drawable.mangga);
                 Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
                 dialogButton.setOnClickListener( new View.OnClickListener(){
                     public void onClick(View v){
@@ -54,18 +52,18 @@ public class Hewan extends AppCompatActivity {
                 dialog.show();
             }
         });
-        Button ayam  = (Button) findViewById(R.id.tombolayam);
-        ayam.setOnClickListener(new View.OnClickListener() {
+        Button manggis  = (Button) findViewById(R.id.tombolmanggis);
+        manggis.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
-                final Dialog dialog = new Dialog(Hewan.this);
+                final Dialog dialog = new Dialog(Buah.this);
                 dialog.setContentView(R.layout.layout_custom);
-                dialog.setTitle("Ayam");
+                dialog.setTitle("Manggis");
                 TextView text = (TextView) dialog.findViewById(R.id.tv_desc);
-                text.setText("Ayam");
+                text.setText("Manggis");
                 ImageView image = (ImageView) dialog.findViewById(R.id.tv_icon);
                 image.setMinimumWidth(100);
                 image.setMinimumHeight(120);
-                image.setImageResource(R.drawable.ayam);
+                image.setImageResource(R.drawable.manggis);
                 Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
                 dialogButton.setOnClickListener( new View.OnClickListener(){
                     public void onClick(View v){
@@ -75,18 +73,18 @@ public class Hewan extends AppCompatActivity {
                 dialog.show();
             }
         });
-        Button badak  = (Button) findViewById(R.id.tombolbadak);
-        badak.setOnClickListener(new View.OnClickListener() {
+        Button pisang  = (Button) findViewById(R.id.tombolpisang);
+        pisang.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
-                final Dialog dialog = new Dialog(Hewan.this);
+                final Dialog dialog = new Dialog(Buah.this);
                 dialog.setContentView(R.layout.layout_custom);
-                dialog.setTitle("Badak");
+                dialog.setTitle("Pisang");
                 TextView text = (TextView) dialog.findViewById(R.id.tv_desc);
-                text.setText("Badak");
+                text.setText("Pisang");
                 ImageView image = (ImageView) dialog.findViewById(R.id.tv_icon);
                 image.setMinimumWidth(100);
                 image.setMinimumHeight(120);
-                image.setImageResource(R.drawable.badak);
+                image.setImageResource(R.drawable.pisang);
                 Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
                 dialogButton.setOnClickListener( new View.OnClickListener(){
                     public void onClick(View v){
@@ -96,18 +94,18 @@ public class Hewan extends AppCompatActivity {
                 dialog.show();
             }
         });
-        Button ikan  = (Button) findViewById(R.id.tombolikan);
-        ikan.setOnClickListener(new View.OnClickListener() {
+        Button sirsak  = (Button) findViewById(R.id.tombolsirsak);
+        sirsak.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
-                final Dialog dialog = new Dialog(Hewan.this);
+                final Dialog dialog = new Dialog(Buah.this);
                 dialog.setContentView(R.layout.layout_custom);
-                dialog.setTitle("Ikan");
+                dialog.setTitle("Sirsak");
                 TextView text = (TextView) dialog.findViewById(R.id.tv_desc);
-                text.setText("Ikan");
+                text.setText("Sirsak");
                 ImageView image = (ImageView) dialog.findViewById(R.id.tv_icon);
                 image.setMinimumWidth(100);
                 image.setMinimumHeight(120);
-                image.setImageResource(R.drawable.ikan);
+                image.setImageResource(R.drawable.sirsak);
                 Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
                 dialogButton.setOnClickListener( new View.OnClickListener(){
                     public void onClick(View v){
@@ -117,18 +115,18 @@ public class Hewan extends AppCompatActivity {
                 dialog.show();
             }
         });
-        Button kucing  = (Button) findViewById(R.id.tombolkucing);
-        kucing.setOnClickListener(new View.OnClickListener() {
+        Button jeruk  = (Button) findViewById(R.id.tomboljeruk);
+        jeruk.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
-                final Dialog dialog = new Dialog(Hewan.this);
+                final Dialog dialog = new Dialog(Buah.this);
                 dialog.setContentView(R.layout.layout_custom);
-                dialog.setTitle("Kucing");
+                dialog.setTitle("Jeruk");
                 TextView text = (TextView) dialog.findViewById(R.id.tv_desc);
-                text.setText("Kucing");
+                text.setText("Jeruk");
                 ImageView image = (ImageView) dialog.findViewById(R.id.tv_icon);
                 image.setMinimumWidth(100);
                 image.setMinimumHeight(120);
-                image.setImageResource(R.drawable.kucing);
+                image.setImageResource(R.drawable.jeruk);
                 Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
                 dialogButton.setOnClickListener( new View.OnClickListener(){
                     public void onClick(View v){
@@ -138,18 +136,18 @@ public class Hewan extends AppCompatActivity {
                 dialog.show();
             }
         });
-        Button macan  = (Button) findViewById(R.id.tombolmacan);
-        macan.setOnClickListener(new View.OnClickListener() {
+        Button durian  = (Button) findViewById(R.id.tomboldurian);
+        durian.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
-                final Dialog dialog = new Dialog(Hewan.this);
+                final Dialog dialog = new Dialog(Buah.this);
                 dialog.setContentView(R.layout.layout_custom);
-                dialog.setTitle("Macan");
+                dialog.setTitle("Durian");
                 TextView text = (TextView) dialog.findViewById(R.id.tv_desc);
-                text.setText("Macan");
+                text.setText("Durian");
                 ImageView image = (ImageView) dialog.findViewById(R.id.tv_icon);
                 image.setMinimumWidth(100);
                 image.setMinimumHeight(120);
-                image.setImageResource(R.drawable.macan);
+                image.setImageResource(R.drawable.durian);
                 Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
                 dialogButton.setOnClickListener( new View.OnClickListener(){
                     public void onClick(View v){
@@ -159,18 +157,18 @@ public class Hewan extends AppCompatActivity {
                 dialog.show();
             }
         });
-        Button lebah  = (Button) findViewById(R.id.tombollebah);
-        lebah.setOnClickListener(new View.OnClickListener() {
+        Button anggur  = (Button) findViewById(R.id.tombolanggur);
+        anggur.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
-                final Dialog dialog = new Dialog(Hewan.this);
+                final Dialog dialog = new Dialog(Buah.this);
                 dialog.setContentView(R.layout.layout_custom);
-                dialog.setTitle("Lebah");
+                dialog.setTitle("Anggur");
                 TextView text = (TextView) dialog.findViewById(R.id.tv_desc);
-                text.setText("Lebah");
+                text.setText("Anggur");
                 ImageView image = (ImageView) dialog.findViewById(R.id.tv_icon);
                 image.setMinimumWidth(100);
                 image.setMinimumHeight(120);
-                image.setImageResource(R.drawable.lebah);
+                image.setImageResource(R.drawable.anggur);
                 Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
                 dialogButton.setOnClickListener( new View.OnClickListener(){
                     public void onClick(View v){
@@ -180,18 +178,18 @@ public class Hewan extends AppCompatActivity {
                 dialog.show();
             }
         });
-        Button rusa  = (Button) findViewById(R.id.tombolrusa);
-        rusa.setOnClickListener(new View.OnClickListener() {
+        Button strowbery  = (Button) findViewById(R.id.tombolstroberry);
+        strowbery.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
-                final Dialog dialog = new Dialog(Hewan.this);
+                final Dialog dialog = new Dialog(Buah.this);
                 dialog.setContentView(R.layout.layout_custom);
-                dialog.setTitle("Rusa");
+                dialog.setTitle("StrowBery");
                 TextView text = (TextView) dialog.findViewById(R.id.tv_desc);
-                text.setText("Rusa");
+                text.setText("Stroberi");
                 ImageView image = (ImageView) dialog.findViewById(R.id.tv_icon);
                 image.setMinimumWidth(100);
                 image.setMinimumHeight(120);
-                image.setImageResource(R.drawable.rusa);
+                image.setImageResource(R.drawable.stroberry);
                 Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
                 dialogButton.setOnClickListener( new View.OnClickListener(){
                     public void onClick(View v){
@@ -201,13 +199,13 @@ public class Hewan extends AppCompatActivity {
                 dialog.show();
             }
         });
-        Button testhewan  = (Button) findViewById(R.id.tomboltesthewan);
-        testhewan.setOnClickListener(new View.OnClickListener() {
+        Button testBuah  = (Button) findViewById(R.id.tomboltestbuah);
+        testBuah.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
-                final Dialog dialog = new Dialog(Hewan.this);
+                final Dialog dialog = new Dialog(Buah.this);
                 dialog.setContentView(R.layout.activity_ujian);
                 ImageView headersoal = dialog.findViewById(R.id.headersoal);
-                headersoal.setImageResource(R.drawable.headerbinatang);
+                headersoal.setImageResource(R.drawable.headerbuahbuahan);
                 dialog.setTitle("Berapa Soal ?");
                 Button tombolujian1 = (Button) dialog.findViewById(R.id.tomboljumlahsoal1);
                 tombolujian1.setText("1");
@@ -218,9 +216,9 @@ public class Hewan extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Hewan.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,HewanTest.class);
                         SharedPreferences.Editor editor = sp.edit();
-                        editor.putString("onState", "Ujian Hewan");
+                        editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
                         editor.putString("Judul","Ujian Soal");
                         editor.putString("Jumlah Soal","1");
@@ -239,9 +237,9 @@ public class Hewan extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Hewan.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,HewanTest.class);
                         SharedPreferences.Editor editor = sp.edit();
-                        editor.putString("onState", "Ujian Hewan");
+                        editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
                         editor.putString("Judul","Ujian Soal");
                         editor.putString("Jumlah Soal","2");
@@ -260,9 +258,9 @@ public class Hewan extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Hewan.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,HewanTest.class);
                         SharedPreferences.Editor editor = sp.edit();
-                        editor.putString("onState", "Ujian Hewan");
+                        editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
                         editor.putString("Judul","Ujian Soal");
                         editor.putString("Jumlah Soal","3");
@@ -281,9 +279,9 @@ public class Hewan extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Hewan.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,HewanTest.class);
                         SharedPreferences.Editor editor = sp.edit();
-                        editor.putString("onState", "Ujian Hewan");
+                        editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
                         editor.putString("Judul","Ujian Soal");
                         editor.putString("Jumlah Soal","4");
@@ -302,9 +300,9 @@ public class Hewan extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Hewan.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,HewanTest.class);
                         SharedPreferences.Editor editor = sp.edit();
-                        editor.putString("onState", "Ujian Hewan");
+                        editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
                         editor.putString("Judul","Ujian Soal");
                         editor.putString("Jumlah Soal","5");
@@ -323,9 +321,9 @@ public class Hewan extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Hewan.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,HewanTest.class);
                         SharedPreferences.Editor editor = sp.edit();
-                        editor.putString("onState", "Ujian Hewan");
+                        editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
                         editor.putString("Judul","Ujian Soal");
                         editor.putString("Jumlah Soal","10");

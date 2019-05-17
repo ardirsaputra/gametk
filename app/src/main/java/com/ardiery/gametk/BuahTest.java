@@ -11,19 +11,19 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class HewanTest extends AppCompatActivity {
-    public static String[] warna = {"Ayam","Sapi","Badak","Lebah","Kucing","Ikan","Rusa","Macan","Lebah","Kucing"};
+public class BuahTest extends AppCompatActivity {
+    public static String[] warna = {"Pisang","Anggur","Sirsak","Jeruk","Stroberi","Mangga","Manggis","Durian","Jeruk","Stroberi"};
     public static int[] warnaGambar = {
-            R.drawable.ayam,
-            R.drawable.sapi,
-            R.drawable.badak,
-            R.drawable.lebah,
-            R.drawable.kucing,
-            R.drawable.ikan,
-            R.drawable.rusa,
-            R.drawable.macan,
-            R.drawable.lebah,
-            R.drawable.kucing
+            R.drawable.pisang,
+            R.drawable.anggur,
+            R.drawable.sirsak,
+            R.drawable.jeruk,
+            R.drawable.stroberry,
+            R.drawable.mangga,
+            R.drawable.manggis,
+            R.drawable.durian,
+            R.drawable.jeruk,
+            R.drawable.stroberry
     };
     @SuppressLint("SetTextI18n")
     @Override
@@ -503,7 +503,7 @@ public class HewanTest extends AppCompatActivity {
                     editor.apply();
                     if(nomor_soal == jumlah_soal ){
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HasilTest.class);
+                        mainIntent = new Intent(BuahTest.this,HasilTest.class);
                         startActivity(mainIntent);
                         finish();
                     }else{
@@ -518,14 +518,14 @@ public class HewanTest extends AppCompatActivity {
                         storageedit.putString("Nomor Soal", nomorselanjutnaya);
                         storageedit.apply();
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HewanTest.class);
+                        mainIntent = new Intent(BuahTest.this,BuahTest.class);
                         startActivity(mainIntent);
                         finish();
                     }
                 }else{
                     if(nomor_soal == jumlah_soal ){
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HasilTest.class);
+                        mainIntent = new Intent(BuahTest.this,HasilTest.class);
                         startActivity(mainIntent);
                         finish();
                     }else{
@@ -537,7 +537,7 @@ public class HewanTest extends AppCompatActivity {
                         String nomorselanjutnya = Integer.toString(nomor_soal+1);
                         storageedit.putString("Nomor Soal", nomorselanjutnya);
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HewanTest.class);
+                        mainIntent = new Intent(BuahTest.this,BuahTest.class);
                         startActivity(mainIntent);
                         finish();
                         storageedit.apply();
@@ -582,7 +582,7 @@ public class HewanTest extends AppCompatActivity {
                     editor.apply();
                     if(nomor_soal == jumlah_soal ){
                         Intent mainIntent;
-                        mainIntent = new Intent( HewanTest.this,HasilTest.class);
+                        mainIntent = new Intent( BuahTest.this,HasilTest.class);
                         startActivity(mainIntent);
                         finish();
                     }else{
@@ -597,14 +597,14 @@ public class HewanTest extends AppCompatActivity {
                         storageedit.putString("Nomor Soal", nomorselanjutnaya);
                         storageedit.apply();
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HewanTest.class);
+                        mainIntent = new Intent(BuahTest.this,BuahTest.class);
                         startActivity(mainIntent);
                         finish();
                     }
                 }else{
                     if(nomor_soal == jumlah_soal ){
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HasilTest.class);
+                        mainIntent = new Intent(BuahTest.this,HasilTest.class);
                         startActivity(mainIntent);
                         finish();
                     }else{
@@ -616,7 +616,7 @@ public class HewanTest extends AppCompatActivity {
                         String nomorselanjutnya = Integer.toString(nomor_soal+1);
                         storageedit.putString("Nomor Soal", nomorselanjutnya);
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HewanTest.class);
+                        mainIntent = new Intent(BuahTest.this,BuahTest.class);
                         startActivity(mainIntent);
                         finish();
                         storageedit.apply();
@@ -661,7 +661,7 @@ public class HewanTest extends AppCompatActivity {
                     editor.apply();
                     if(nomor_soal == jumlah_soal ){
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HasilTest.class);
+                        mainIntent = new Intent(BuahTest.this,HasilTest.class);
                         startActivity(mainIntent);
                         finish();
                     }else{
@@ -676,14 +676,14 @@ public class HewanTest extends AppCompatActivity {
                         storageedit.putString("Nomor Soal", nomorselanjutnaya);
                         storageedit.apply();
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HewanTest.class);
+                        mainIntent = new Intent(BuahTest.this,BuahTest.class);
                         startActivity(mainIntent);
                         finish();
                     }
                 }else{
                     if(nomor_soal == jumlah_soal ){
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HasilTest.class);
+                        mainIntent = new Intent(BuahTest.this,HasilTest.class);
                         startActivity(mainIntent);
                         finish();
                     }else{
@@ -695,7 +695,7 @@ public class HewanTest extends AppCompatActivity {
                         String nomorselanjutnya = Integer.toString(nomor_soal+1);
                         storageedit.putString("Nomor Soal", nomorselanjutnya);
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HewanTest.class);
+                        mainIntent = new Intent(BuahTest.this,BuahTest.class);
                         startActivity(mainIntent);
                         finish();
                         storageedit.apply();
@@ -740,7 +740,7 @@ public class HewanTest extends AppCompatActivity {
                     editor.apply();
                     if(nomor_soal == jumlah_soal ){
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HasilTest.class);
+                        mainIntent = new Intent(BuahTest.this,HasilTest.class);
                         startActivity(mainIntent);
                         finish();
                     }else{
@@ -755,14 +755,14 @@ public class HewanTest extends AppCompatActivity {
                         storageedit.putString("Nomor Soal", nomorselanjutnaya);
                         storageedit.apply();
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HewanTest.class);
+                        mainIntent = new Intent(BuahTest.this,BuahTest.class);
                         startActivity(mainIntent);
                         finish();
                     }
                 }else{
                     if(nomor_soal == jumlah_soal ){
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HasilTest.class);
+                        mainIntent = new Intent(BuahTest.this,HasilTest.class);
                         startActivity(mainIntent);
                         finish();
                     }else{
@@ -774,7 +774,7 @@ public class HewanTest extends AppCompatActivity {
                         String nomorselanjutnya = Integer.toString(nomor_soal+1);
                         storageedit.putString("Nomor Soal", nomorselanjutnya);
                         Intent mainIntent;
-                        mainIntent = new Intent(HewanTest.this,HewanTest.class);
+                        mainIntent = new Intent(BuahTest.this,BuahTest.class);
                         startActivity(mainIntent);
                         finish();
                         storageedit.apply();
