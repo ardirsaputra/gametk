@@ -48,6 +48,26 @@ public class main extends AppCompatActivity {
                 startActivity(mainIntent);
             }
         });
+        final Button hewan = (Button) findViewById(R.id.hewan);
+        hewan.setOnClickListener(  new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent mainIntent;
+                SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
+                mainIntent = new Intent(main.this,Hewan.class);
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putString("onState", "warna");
+                editor.putString("Judul","Warna");
+                editor.putString("Jumlah Soal","0");
+                editor.putString("TombolUjian1","1");
+                editor.putString("TombolUjian2","2");
+                editor.putString("TombolUjian3","3");
+                editor.putString("TombolUjian4","4");
+                editor.putString("TombolUjian5","5");
+                editor.putString("TombolUjian6","10");
+                editor.commit();
+                startActivity(mainIntent);
+            }
+        });
         //String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
         // Capture the layout's TextView and set the string as its text
