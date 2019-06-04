@@ -106,7 +106,9 @@ public class Hewan extends AppCompatActivity {
                 text.setText("Ikan");
                 ImageView image = (ImageView) dialog.findViewById(R.id.tv_icon);
                 image.setMinimumWidth(100);
-                image.setMinimumHeight(120);
+                image.setMinimumHeight(80);
+                image.setMaxWidth(100);
+                image.setMaxHeight(80);
                 image.setImageResource(R.drawable.ikan);
                 Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
                 dialogButton.setOnClickListener( new View.OnClickListener(){
@@ -190,7 +192,7 @@ public class Hewan extends AppCompatActivity {
                 text.setText("Rusa");
                 ImageView image = (ImageView) dialog.findViewById(R.id.tv_icon);
                 image.setMinimumWidth(100);
-                image.setMinimumHeight(120);
+                image.setMinimumHeight(100);
                 image.setImageResource(R.drawable.rusa);
                 Button dialogButton = (Button) dialog.findViewById(R.id.bt_ok);
                 dialogButton.setOnClickListener( new View.OnClickListener(){
@@ -298,7 +300,7 @@ public class Hewan extends AppCompatActivity {
                 tombolujian5.setOnClickListener(  new View.OnClickListener() {
                     public void onClick(View v) {
                         Random angka = new Random();
-                        int soal = angka.nextInt(10);
+                        int soal = angka.nextInt(40);
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
@@ -319,7 +321,7 @@ public class Hewan extends AppCompatActivity {
                 tombolujian6.setOnClickListener(  new View.OnClickListener() {
                     public void onClick(View v) {
                         Random angka = new Random();
-                        int soal = angka.nextInt(10);
+                        int soal = angka.nextInt(40);
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);

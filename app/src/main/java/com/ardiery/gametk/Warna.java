@@ -235,7 +235,7 @@ public class Warna extends AppCompatActivity {
                 tombolujian1.setOnClickListener(  new View.OnClickListener() {
                     public void onClick(View v) {
                         Random angka = new Random();
-                        int soal = angka.nextInt(10);
+                        int soal = angka.nextInt(40);
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
@@ -256,7 +256,7 @@ public class Warna extends AppCompatActivity {
                 tombolujian2.setOnClickListener(  new View.OnClickListener() {
                     public void onClick(View v) {
                         Random angka = new Random();
-                        int soal = angka.nextInt(10);
+                        int soal = angka.nextInt(40);
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
@@ -277,7 +277,7 @@ public class Warna extends AppCompatActivity {
                 tombolujian3.setOnClickListener(  new View.OnClickListener() {
                     public void onClick(View v) {
                         Random angka = new Random();
-                        int soal = angka.nextInt(10);
+                        int soal = angka.nextInt(40);
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
@@ -298,7 +298,7 @@ public class Warna extends AppCompatActivity {
                 tombolujian4.setOnClickListener(  new View.OnClickListener() {
                     public void onClick(View v) {
                         Random angka = new Random();
-                        int soal = angka.nextInt(10);
+                        int soal = angka.nextInt(40);
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
@@ -319,7 +319,7 @@ public class Warna extends AppCompatActivity {
                 tombolujian5.setOnClickListener(  new View.OnClickListener() {
                     public void onClick(View v) {
                         Random angka = new Random();
-                        int soal = angka.nextInt(10);
+                        int soal = angka.nextInt(40);
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
@@ -340,7 +340,7 @@ public class Warna extends AppCompatActivity {
                 tombolujian6.setOnClickListener(  new View.OnClickListener() {
                     public void onClick(View v) {
                         Random angka = new Random();
-                        int soal = angka.nextInt(10);
+                        int soal = angka.nextInt(40);
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);

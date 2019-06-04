@@ -31,7 +31,7 @@ public class Buah extends AppCompatActivity {
         final String texttombolujian4 = sp.getString("TombolUjian4","4");
         final String texttombolujian5 = sp.getString("TombolUjian5","5");
         final String texttombolujian6 = sp.getString("TombolUjian6","10");
-        Button mangga  = (Button) findViewById(R.id.tombolmangga);
+        Button mangga  = (Button) findViewById(R.id.tombolpersegipanjang);
         mangga.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
                 final Dialog dialog = new Dialog(Buah.this);
@@ -94,7 +94,7 @@ public class Buah extends AppCompatActivity {
                 dialog.show();
             }
         });
-        Button sirsak  = (Button) findViewById(R.id.tombolsirsak);
+        Button sirsak  = (Button) findViewById(R.id.tombollonjong);
         sirsak.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
                 final Dialog dialog = new Dialog(Buah.this);
@@ -115,7 +115,7 @@ public class Buah extends AppCompatActivity {
                 dialog.show();
             }
         });
-        Button jeruk  = (Button) findViewById(R.id.tomboljeruk);
+        Button jeruk  = (Button) findViewById(R.id.tombolpanjang);
         jeruk.setOnClickListener(new View.OnClickListener() {
             public void onClick (View v ){
                 final Dialog dialog = new Dialog(Buah.this);
@@ -216,7 +216,7 @@ public class Buah extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Buah.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,BuahTest.class);
                         SharedPreferences.Editor editor = sp.edit();
                         editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
@@ -237,7 +237,7 @@ public class Buah extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Buah.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,BuahTest.class);
                         SharedPreferences.Editor editor = sp.edit();
                         editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
@@ -258,7 +258,7 @@ public class Buah extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Buah.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,BuahTest.class);
                         SharedPreferences.Editor editor = sp.edit();
                         editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
@@ -279,7 +279,7 @@ public class Buah extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Buah.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,BuahTest.class);
                         SharedPreferences.Editor editor = sp.edit();
                         editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
@@ -300,7 +300,7 @@ public class Buah extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Buah.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,BuahTest.class);
                         SharedPreferences.Editor editor = sp.edit();
                         editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);
@@ -321,7 +321,7 @@ public class Buah extends AppCompatActivity {
                         String stringsoal = Integer.toString(soal);
                         Intent mainIntent;
                         SharedPreferences sp = getSharedPreferences(PREFS_NAME, 0);
-                        mainIntent = new Intent(Buah.this,HewanTest.class);
+                        mainIntent = new Intent(Buah.this,BuahTest.class);
                         SharedPreferences.Editor editor = sp.edit();
                         editor.putString("onState", "Ujian Buah");
                         editor.putBoolean("isExam",true);

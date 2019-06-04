@@ -31,18 +31,9 @@ public class HewanTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
         SharedPreferences sp = getSharedPreferences("Storage", 0);
-
         int scoreString = sp.getInt("score",0);
         int nomorsoal =  Integer.parseInt(sp.getString("Nomor Soal","0"));
         final int jumlahSoal = Integer.parseInt(sp.getString("Jumlah Soal","1"));
-        //int[] soal = new int[jumlahSoal];
-
-        //int[] jawaban = new int[4];
-        //Random angka = new Random();
-        //for(int i = 0 ; i < 4 ; i++){
-        //     int a = angka.nextInt(10);
-        //    jawaban[i] = warnaGambar[a];
-        //}
         final TextView Nomor = findViewById(R.id.Nomor);
         Nomor.setText(FormatNomor(nomorsoal,jumlahSoal));
         TextView score  = findViewById(R.id.score);
