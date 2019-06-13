@@ -1,9 +1,10 @@
 # GameTK
 
 Aplikasi ini merupakan aplikasi game edukasi yang ditujukan kepada anak anak tk yang sudah biasa mengeja atau membaca huruf.
+
 Pembuatan aplikasi ini ditujukan untuk kuliah mobile computing dengan menyediakan aplikasi offline dengan pengaturan tampilan yang minimalis untuk anak anak
 
-# fitur - fitur
+# Fitur - fitur
 
 * Terdapat Beberapa Kategori Pada Game
 * Terdapat Pemilihan Banyaknya Soal Pada Game
@@ -13,3 +14,7 @@ Pembuatan aplikasi ini ditujukan untuk kuliah mobile computing dengan menyediaka
 * Penggunaan Tanpa menggunakan Internet (Offline)
 * Mudah Digunakan (tidak membutuhkan pengaturan yang ribet)
 * Tidak membutuhkan sumber daya yang besar ( light resource )
+
+# Contributor 
+* Ardi Ragil Saputra (Programmer)
+* Ery Setiawan (Designer)
